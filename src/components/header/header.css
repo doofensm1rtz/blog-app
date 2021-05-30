@@ -1,0 +1,31 @@
+/* Main header */
+.header {
+  font-family: "Lora", serif;
+}
+
+/* Header titles */
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.header-title--sm {
+  font-size: 20px;
+  position: absolute;
+  top: 28%;
+}
+
+.header-title--lg {
+  font-size: 80px;
+  position: absolute;
+  top: 12%;
+}
+
+/* Header image */
+.header-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
