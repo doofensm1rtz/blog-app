@@ -1,0 +1,77 @@
+/* Main post detail */
+.post-detail {
+  flex: 3;
+}
+
+.post-wrapper {
+  padding: 0 0 20px 20px;
+}
+
+.post-detail--img {
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+  border-radius: 10px;
+}
+
+/* Post title */
+.post-detail--title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 15px;
+}
+
+/* Icons */
+.post-detail--icons {
+  float: right;
+  font-size: 20px;
+}
+
+.post-icon {
+  margin-right: 15px;
+}
+
+.post-icon:first-child {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.post-icon:last-child {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+/* Post detail info */
+.post-detail--info {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-detail--author {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+}
+
+.post-detail--author b {
+  color: #e85a4f;
+}
+
+.post-detail--date {
+  margin-top: 10px;
+  font-family: "Lora", sans-serif;
+  font-size: 12px;
+}
+
+/* Post detail description */
+.post-detail--description {
+  margin-top: 20px;
+  line-height: 25px;
+  color: #4f4f4f;
+}
+
+.post-detail--description::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+}

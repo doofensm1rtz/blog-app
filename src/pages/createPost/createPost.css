@@ -1,0 +1,91 @@
+/* Wrapper */
+.create-post {
+  margin-top: 50px;
+}
+
+/* Main create post form */
+.create-post--form {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+/* Form groups */
+.form-group {
+  margin: 20px;
+  width: 80vw;
+}
+
+.create-post--img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Add image button */
+.add-icon {
+  font-size: 32px;
+}
+
+.file-label {
+  color: #8d8e8a;
+  cursor: pointer;
+}
+
+.file-label--text {
+  font-size: 32px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Inputs */
+#file-input {
+  display: none;
+}
+
+#title-input {
+  font-size: 32px;
+  padding-bottom: 8px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #8d8e8a;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.description-input {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #8d8e8a;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.description-input:focus,
+#title-input:focus {
+  border-bottom: 3px solid #8d8e8a;
+}
+
+/* Submit button */
+.create-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Lora", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.create-btn:hover {
+  background-color: #d8c3a5;
+}
+
+textarea {
+  resize: vertical;
+}
