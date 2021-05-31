@@ -1,0 +1,105 @@
+/* Main settings */
+.settings {
+  display: flex;
+  margin-top: 30px;
+  font-family: "Lora", sans-serif;
+}
+
+.settings-wrapper {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Settings titles */
+.settings-titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-update--title {
+  font-size: 30px;
+  color: #4f4f4f;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.settings-delete--title {
+  border: 2px solid #d9534f;
+  font-size: 12px;
+  padding: 4px;
+  color: #d9534f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.settings-delete--title:hover {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+/* Settings form */
+.settings-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-pp {
+  margin: 10px 0;
+  display: flex;
+}
+
+.settings-pp > img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.settings-pp > label {
+  margin-left: 25px;
+  font-size: 40px;
+  line-height: 80px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Form inputs */
+.settings-form > label {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.settings-form > input {
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #8d8e8a;
+}
+
+.settings-form > input:focus {
+  border-bottom: 3px solid #8d8e8a;
+}
+
+.settings-btn {
+  margin-top: 20px;
+  width: 80px;
+  padding: 8px;
+  align-self: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Lora", sans-serif;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.settings-btn:hover {
+  background-color: #d8c3a5;
+  color: #4f4f4f;
+}
