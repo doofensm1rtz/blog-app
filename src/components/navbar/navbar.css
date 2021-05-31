@@ -7,6 +7,9 @@
   background-color: #eae7dc;
   color: #8e8d8a;
   font-family: "Josefin Sans", sans-serif;
+  position: sticky;
+  z-index: 999;
+  top: 0;
 }
 
 .nav-left,
