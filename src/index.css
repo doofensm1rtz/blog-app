@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 body::-webkit-scrollbar {
   width: 10px;
 }
