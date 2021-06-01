@@ -6,7 +6,7 @@ const PostDetail = () => {
     <div className="post-detail">
       <div className="post-wrapper">
         <img
-          src="images/post/post_img_1.jpg"
+          src="/images/post/post_img_1.jpg"
           alt="post-detail"
           className="post-detail--img"
         />

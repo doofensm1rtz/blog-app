@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import "./navbar.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,11 @@ const Navbar = () => {
       </div>
       <div className="nav-center">
         <ul className="nav-list">
-          <li className="nav-list--item">home</li>
+          <li className="nav-list--item">
+            <Link className="react-link" to="/">
+              home
+            </Link>
+          </li>
           <li className="nav-list--item">about</li>
           <li className="nav-list--item">write</li>
           <li className="nav-list--item">contact</li>
@@ -24,7 +29,7 @@ const Navbar = () => {
       <div className="nav-right">
         <img
           className="nav-image"
-          src="images/profile/profile_img_1.jpg"
+          src="/images/profile/profile_img_1.jpg"
           alt="Profile image"
         ></img>
         <i className="nav-icon--search fas fa-search"></i>
