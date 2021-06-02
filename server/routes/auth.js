@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
-const { findOneAndReplace } = require("../models/User");
 
 // Register
 router.post("/register", async (req, res) => {
