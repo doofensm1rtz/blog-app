@@ -69,3 +69,9 @@
   align-self: center;
   cursor: pointer;
 }
+
+.register-error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

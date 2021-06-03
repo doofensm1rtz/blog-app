@@ -1,32 +1,29 @@
 import "./post.css";
 import React from "react";
+import Moment from "react-moment";
+import { Link } from "react-router-dom";
 
-const Post = () => {
+const Post = ({ post }) => {
   return (
     <div className="post">
-      <img className="post-img" src="images/post/post_img_1.jpg" alt="post" />
+      {post.postImage && (
+        <img className="post-img" src={post.postImage} alt="post" />
+      )}
       <div className="post-info">
         <div className="post-categories">
-          <span className="post-category">Music</span>
-          <span className="post-category">Life</span>
+          {post.categories.map((category) => (
+            <span className="post-category">{category.name}</span>
+          ))}
         </div>
-        <span className="post-title">Lorem ipsum dolor sit amet.</span>
+        <Link to={`post/${post._id}`} className="react-link">
+          <span className="post-title">{post.title}</span>
+        </Link>
         <hr />
-        <span className="post-date">1 hour ago.</span>
+        <span className="post-date">
+          <Moment format="DD-MMM-YYYY">{post.createdAt}</Moment>
+        </span>
       </div>
-      <p className="post-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi autem
-        animi eos rem cupiditate! Natus magnam asperiores ipsam recusandae alias
-        reprehenderit praesentium delectus molestiae fuga error illum enim
-        laudantium, eos molestias, consequuntur explicabo aspernatur, ipsum
-        accusantium beatae? Mollitia harum maxime ipsa suscipit! Iusto, maiores
-        nihil! Quia vitae hic omnis quis incidunt voluptatem ipsam nam voluptate
-        reprehenderit ullam officia minus sunt soluta, quos assumenda nisi eius
-        quaerat accusantium, excepturi numquam molestiae animi eos. Debitis
-        necessitatibus deleniti et tempore, sit quas aspernatur ipsam molestiae
-        quibusdam, ex, qui assumenda in harum recusandae ea quidem. Explicabo ea
-        voluptate incidunt beatae tempore nostrum fugit dicta.
-      </p>
+      <p className="post-description">{post.description}</p>
     </div>
   );
 };

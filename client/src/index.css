@@ -20,6 +20,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+.react-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* 
   Main UI colors
   #eae7dc
