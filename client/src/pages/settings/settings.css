@@ -103,3 +103,10 @@
   background-color: #d8c3a5;
   color: #4f4f4f;
 }
+
+.update-message {
+  color: #28a745;
+  text-align: center;
+  margin: 20px;
+  font-family: "Lora", sans-serif;
+}

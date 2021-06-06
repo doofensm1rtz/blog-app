@@ -4,10 +4,16 @@ import Moment from "react-moment";
 import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
+  const public_path = "http://localhost:5000/images/";
+
   return (
     <div className="post">
       {post.postImage && (
-        <img className="post-img" src={post.postImage} alt="post" />
+        <img
+          className="post-img"
+          src={public_path + post.postImage}
+          alt="post"
+        />
       )}
       <div className="post-info">
         <div className="post-categories">

@@ -6,11 +6,15 @@ const authRoute = require("./routes/auth");
 const usersRoute = require("./routes/users");
 const postsRoute = require("./routes/posts");
 const categoriesRoute = require("./routes/categories");
+const path = require("path");
 
 // Environment config
 dotenv.config();
 
 const app = express();
+
+// Public images folder
+app.use("/images", express.static(path.join(__dirname, "images")));
 
 // Enable to pass json data from body
 app.use(express.json());
@@ -21,6 +25,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
+    useFindAndModify: false,
   })
   .then(() => console.log("Connected to database"))
   .catch((err) => console.log(err));

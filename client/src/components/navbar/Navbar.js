@@ -6,6 +6,7 @@ import { Context } from "../../context/Context";
 
 const Navbar = () => {
   const { user, dispatch } = useContext(Context);
+  const public_path = "http://localhost:5000/images/";
 
   return (
     <div className="navbar">
@@ -56,7 +57,13 @@ const Navbar = () => {
       </div>
       <div className="nav-right">
         {user && (
-          <img className="nav-image" src={user.profileImage} alt=""></img>
+          <Link to="/settings">
+            <img
+              className="nav-image"
+              src={public_path + user.profileImage}
+              alt=""
+            ></img>
+          </Link>
         )}
         <i className="nav-icon--search fas fa-search"></i>
       </div>

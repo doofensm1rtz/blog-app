@@ -5,6 +5,8 @@
 
 .post-wrapper {
   padding: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-detail--img {
@@ -18,6 +20,28 @@
 .post-detail--title {
   text-align: center;
   font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 15px;
+}
+
+.post-title--input {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 15px;
+  padding-bottom: 4px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #8d8e8a;
+}
+
+.post-description--input {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #8d8e8a;
+  width: 100%;
   font-family: "Josefin Sans", sans-serif;
   margin-top: 15px;
 }
@@ -74,4 +98,18 @@
 .post-detail--description::first-letter {
   font-size: 30px;
   font-weight: bold;
+}
+
+/* Update button */
+.update-btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Lora", sans-serif;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 20px;
 }

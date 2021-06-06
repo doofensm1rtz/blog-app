@@ -16,7 +16,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// Register
+// Update
 router.put("/:id", async (req, res) => {
   if (req.params.id !== req.body.userID) {
     res.status(401).json("Not Allowed!");
